@@ -9,4 +9,6 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
+
 LandesBox::Application.config.secret_key_base = '69a389c5e89c2a99162a9773d399e5001d8a5003d85b1e5706b649b03fe172d2978b26475d81a311ba98eb8033466929f77e42be322689e6802a6ab84e57ce37'
+
