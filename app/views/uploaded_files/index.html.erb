@@ -1,0 +1,29 @@
+<h1>Listing Uploaded Files for</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @uploaded_files.each do |uploaded_file| %>
+      <tr>
+        <td><%= uploaded_file.name %></td>
+        <td><%= uploaded_file.location %></td>
+        <td><%= link_to 'Show', uploaded_file %></td>
+        <td><%= link_to 'Edit', edit_uploaded_file_path(uploaded_file) %></td>
+        <td><%= link_to 'Destroy', uploaded_file, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Uploaded file', new_uploaded_file_path %>

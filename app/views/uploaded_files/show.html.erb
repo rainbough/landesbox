@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @uploaded_file.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @uploaded_file.location %>
+</p>
+
+<%= link_to 'Edit', edit_uploaded_file_path(@uploaded_file) %> |
+<%= link_to 'Back', uploaded_files_path %>
